@@ -1,0 +1,26 @@
+Maven build tools
+    เป็น build tool ยอดนิยมสำหรับ java project
+    โดย Syntax จะอยู่ในรูปแบบของ xml เพื่ออธิบาย information ของ project 
+
+    โดยมีส่วนประกอบดังนี้
+        - groupId: ใช้สำหรับใส่ ชื่อทีม, ชื่อ บ. (ในกรณีใช่การค้า)
+        - artifactId: ชื่อโปรเจค
+
+    
+Maven Wrapper
+    ช่วยให้สามารถรัน Maven ได้โดยไม่ต้องติดตั้ง Maven ลงในเครื่องคอมพิวเตอร์
+
+คำสั่ง
+    - mvnw compile: เป็นการ build project ให้อยู่ในรูปแบบที่พร้อมสำหรับขึ้น production
+    - mvnw clean: เป็นการลบของเก่าทิ้งทั้งหมด และทำการ build project ใหม่
+    - mvnw package: ทำให้โปรแกรมของเราถูกแปลงเป็น jar file
+
+<build>
+    เป็นการบอก maven ว่า ในขั้นตอนการ build project เราต้องการใช้ dependencies อะไรบ้าง
+
+<dependencies>
+    เป็นการระบุว่า ใน java project ของเราต้องการใช้ dependencies อะไรบ้าง
+    เช่น 
+        - JaksonDatabind: เป็นการอ่าน json ให้อยู่ในรูปแบบของ object
+
+*** TypeReference ใช้สำหรับข้อมูลที่เราต้องการแปลงในรูปแบบของ collection
